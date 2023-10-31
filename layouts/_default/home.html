@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="intro">
+  {{ .Content }}
+</div>
+<h1>Blog Posts</h1>
+<div class="blog-list">
+    {{ $format := "2 Jan 2006" }}
+    {{ range (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+    <a href="{{ .RelPermalink }}" class="blog-list-item">
+        <h2>{{ .LinkTitle }}</h2>
+        <p>{{ .Date.Format $format }}</p>
+    </a>
+    {{ end }}
+</div>
+{{ end }}
