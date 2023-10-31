@@ -31,4 +31,4 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your w
 
 ## License
 
-This theme is released under the MIT License. For more information read the [License](https://github.com/avicndugu/uwezo-hugo/blob/master/LICENSE).
+This theme is released under the MIT License. For more information read the [License](https://github.com/avicndugu/uwezo-hugo/blob/main/LICENSE).

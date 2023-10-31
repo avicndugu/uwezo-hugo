@@ -1,14 +1,14 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Uwezo Hugo'
+
+[params]
+  mainSections = ['posts']
 
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
 weight = 10
-
-[params]
-  mainSections = ['posts']
 
 [[menus.main]]
 name = 'About'
