@@ -1,5 +1,7 @@
 # Uwezo Hugo Theme
 
+Demo: [https://uwezo-hugo-site.pages.dev/](https://uwezo-hugo-site.pages.dev/)
+
 ## Features
 
 Uwezo Hugo is a simple blog theme designed for creating a minimalistic single-column blog.
