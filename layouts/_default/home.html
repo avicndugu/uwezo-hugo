@@ -1,14 +1,24 @@
 {{ define "main" }}
 <div class="intro">
-  {{ .Content }}
+    {{ .Content }}
+    <h1>Blog Posts</h1>
 </div>
-<h1>Blog Posts</h1>
-<div class="blog-list">
+<div class="blog-list cards" id="blog-list">
+    <div class="blog-switch-view" id="blog-switch-view">
+        <div id="list-switch" class="active">
+            <img src="/list-view.svg" height="30">
+        </div>
+        <div  id="cards-switch">
+            <img src="/card-view.svg" height="30">
+        </div>
+    </div>
     {{ $format := "2 Jan 2006" }}
     {{ range (where site.RegularPages "Type" "in" site.Params.mainSections) }}
     <a href="{{ .RelPermalink }}" class="blog-list-item">
-        <h2>{{ .LinkTitle }}</h2>
-        <p>{{ .Date.Format $format }}</p>
+        <div>
+            <h2>{{ .LinkTitle }}</h2>
+            <p>{{ .Date.Format $format }}</p>
+        </div>
     </a>
     {{ end }}
 </div>
