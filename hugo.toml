@@ -1,14 +1,15 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Uwezo Hugo'
-
-[params]
-  mainSections = ['posts']
+title = 'My New Hugo Site'
 
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
 weight = 10
+
+[params]
+  mainSections = ['posts']
+  cards = false
 
 [[menus.main]]
 name = 'About'
@@ -19,4 +20,12 @@ weight = 20
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+
+
+
+
+
+
+
 
